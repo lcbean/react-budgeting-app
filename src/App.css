@@ -48,21 +48,25 @@ h4 {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+  border-radius: 30px;
 }
 
 .inc-exp-container > div {
   flex: 1;
   text-align: center;
+  
 }
 
 .inc-exp-container > div:first-of-type {
   border-right: 1px solid #dedede;
+  
 }
 
 .money {
   font-size: 20px;
   letter-spacing: 1px;
   margin: 5px 0;
+  
 }
 
 .money.in {
@@ -71,6 +75,7 @@ h4 {
 
 .money.out {
   color: #c0392b;
+  
 }
 
 label {
@@ -81,24 +86,30 @@ label {
 input[type='text'],
 input[type='number'] {
   border: 1px solid #dedede;
-  border-radius: 2px;
+  border-radius: 30px;
   display: block;
   font-size: 16px;
   padding: 10px;
   width: 100%;
 }
 
-.btn {
+.add-btn {
   cursor: pointer;
-  background-color: #9c88ff;
+  background-color: skyblue;
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
+  border-radius: 30px; 
   display: block;
   font-size: 16px;
   margin: 10px 0 30px;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
+  font-weight: bold; 
+}
+
+.add-btn:hover {
+  background-color: rgb(162, 214, 234); 
 }
 
 .btn:focus,
@@ -121,6 +132,7 @@ input[type='number'] {
   position: relative;
   padding: 10px;
   margin: 10px 0;
+  border-radius: 30px;
 }
 
 .list li.plus {
@@ -138,15 +150,18 @@ input[type='number'] {
   color: #fff;
   font-size: 20px;
   line-height: 20px;
-  padding: 2px 5px;
+  padding: 3px 5px;
   position: absolute;
   top: 50%;
   left: 0;
   transform: translate(-100%, -50%);
   opacity: 0;
   transition: opacity 0.3s ease;
+  border-radius: 5px;
+  
 }
 
 .list li:hover .delete-btn {
   opacity: 1;
+  
 }
